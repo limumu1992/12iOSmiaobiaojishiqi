@@ -11,37 +11,10 @@
     <link href="files/ios秒表计时器/styles.css" type="text/css" rel="stylesheet"/>
     <script src="resources/scripts/jquery-1.7.1.min.js"></script>
     <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
-    <script src="resources/scripts/axure/axQuery.js"></script>
-    <script src="resources/scripts/axure/globals.js"></script>
-    <script src="resources/scripts/axutils.js"></script>
-    <script src="resources/scripts/axure/annotation.js"></script>
-    <script src="resources/scripts/axure/axQuery.std.js"></script>
-    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
     <script src="data/document.js"></script>
-    <script src="resources/scripts/messagecenter.js"></script>
-    <script src="resources/scripts/axure/events.js"></script>
-    <script src="resources/scripts/axure/recording.js"></script>
-    <script src="resources/scripts/axure/action.js"></script>
-    <script src="resources/scripts/axure/expr.js"></script>
-    <script src="resources/scripts/axure/geometry.js"></script>
-    <script src="resources/scripts/axure/flyout.js"></script>
-    <script src="resources/scripts/axure/ie.js"></script>
-    <script src="resources/scripts/axure/model.js"></script>
-    <script src="resources/scripts/axure/repeater.js"></script>
-    <script src="resources/scripts/axure/sto.js"></script>
-    <script src="resources/scripts/axure/utils.temp.js"></script>
-    <script src="resources/scripts/axure/variables.js"></script>
-    <script src="resources/scripts/axure/drag.js"></script>
-    <script src="resources/scripts/axure/move.js"></script>
-    <script src="resources/scripts/axure/visibility.js"></script>
-    <script src="resources/scripts/axure/style.js"></script>
-    <script src="resources/scripts/axure/adaptive.js"></script>
-    <script src="resources/scripts/axure/tree.js"></script>
-    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
     <script src="files/ios秒表计时器/data.js"></script>
-    <script src="resources/scripts/axure/legacy.js"></script>
-    <script src="resources/scripts/axure/viewer.js"></script>
-    <script src="resources/scripts/axure/math.js"></script>
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
@@ -55,21 +28,21 @@
       <div id="u0" class="ax_default image">
         <img id="u0_img" class="img " src="images/ios秒表计时器/u0.png"/>
         <!-- Unnamed () -->
-        <div id="u1" class="text" style="display: none; visibility: hidden">
+        <div id="u1" class="text" style="display:none; visibility: hidden">
           <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
         </div>
       </div>
 
       <!-- Unnamed (动态面板) -->
       <div id="u2" class="ax_default">
-        <div id="u2_state0" class="panel_state" data-label="State1">
+        <div id="u2_state0" class="panel_state" data-label="State1" style="">
           <div id="u2_state0_content" class="panel_state_content">
 
             <!-- Unnamed (矩形) -->
             <div id="u3" class="ax_default box_1">
               <div id="u3_div" class=""></div>
               <!-- Unnamed () -->
-              <div id="u4" class="text" style="display: none; visibility: hidden">
+              <div id="u4" class="text" style="display:none; visibility: hidden">
                 <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
               </div>
             </div>
@@ -78,7 +51,7 @@
             <div id="u5" class="ax_default box_1" data-label="start">
               <img id="u5_img" class="img " src="images/ios秒表计时器/start_u5.png"/>
               <!-- Unnamed () -->
-              <div id="u6" class="text" style="visibility: visible;">
+              <div id="u6" class="text">
                 <p><span style="font-family:'应用字体 Regular', '应用字体';">启动</span></p>
               </div>
             </div>
@@ -98,77 +71,85 @@
               <input id="u9_input" type="text" value="00" class="text_sketch"/>
             </div>
 
-            <!-- 计次 (动态面板) -->
-            <div id="u10" class="ax_default" data-label="计次">
-              <div id="u10_state0" class="panel_state" data-label="State1">
+            <!-- 计次列表 (动态面板) -->
+            <div id="u10" class="ax_default" data-label="计次列表">
+              <div id="u10_state0" class="panel_state" data-label="State1" style="">
                 <div id="u10_state0_content" class="panel_state_content">
 
-                  <!-- Unnamed (中继器) -->
-                  <div id="u11" class="ax_default">
-                    <script id="u11_script" type="axure-repeater-template">
+                  <!-- 计次 (动态面板) -->
+                  <div id="u11" class="ax_default" data-label="计次">
+                    <div id="u11_state0" class="panel_state" data-label="State1" style="">
+                      <div id="u11_state0_content" class="panel_state_content">
 
-                      <!-- name (矩形) -->
-                      <div id="u12" class="ax_default box_1 u12" data-label="name">
-                        <div id="u12_div" class="u12_div"></div>
-                        <!-- Unnamed () -->
-                        <div id="u13" class="u13 text" style="display: none; visibility: hidden">
-                          <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                        <!-- Unnamed (中继器) -->
+                        <div id="u12" class="ax_default">
+                          <script id="u12_script" type="axure-repeater-template">
+
+                            <!-- name (矩形) -->
+                            <div id="u13" class="ax_default box_1 u13" data-label="name">
+                              <div id="u13_div" class="u13_div"></div>
+                              <!-- Unnamed () -->
+                              <div id="u14" class="u14 text" style="display:none; visibility: hidden">
+                                <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                              </div>
+                            </div>
+
+                            <!-- time (矩形) -->
+                            <div id="u15" class="ax_default box_1 u15" data-label="time">
+                              <div id="u15_div" class="u15_div"></div>
+                              <!-- Unnamed () -->
+                              <div id="u16" class="u16 text" style="display:none; visibility: hidden">
+                                <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                              </div>
+                            </div>
+
+                            <!-- Unnamed (水平线) -->
+                            <div id="u17" class="ax_default line u17">
+                              <img id="u17_img" class="img u17_img" src="images/ios秒表计时器/u17.png"/>
+                              <!-- Unnamed () -->
+                              <div id="u18" class="u18 text" style="display:none; visibility: hidden">
+                                <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                              </div>
+                            </div>
+                          </script>
+                        </div>
+
+                        <!-- name (矩形) -->
+                        <div id="u19" class="ax_default box_1" data-label="name">
+                          <div id="u19_div" class=""></div>
+                          <!-- Unnamed () -->
+                          <div id="u20" class="text" style="display:none; visibility: hidden">
+                            <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                          </div>
+                        </div>
+
+                        <!-- time (矩形) -->
+                        <div id="u21" class="ax_default box_1" data-label="time">
+                          <div id="u21_div" class=""></div>
+                          <!-- Unnamed () -->
+                          <div id="u22" class="text" style="display:none; visibility: hidden">
+                            <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                          </div>
+                        </div>
+
+                        <!-- Unnamed (水平线) -->
+                        <div id="u23" class="ax_default line">
+                          <img id="u23_img" class="img " src="images/ios秒表计时器/u17.png"/>
+                          <!-- Unnamed () -->
+                          <div id="u24" class="text" style="display:none; visibility: hidden">
+                            <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                          </div>
+                        </div>
+
+                        <!-- Unnamed (水平线) -->
+                        <div id="u25" class="ax_default line">
+                          <img id="u25_img" class="img " src="images/ios秒表计时器/u17.png"/>
+                          <!-- Unnamed () -->
+                          <div id="u26" class="text" style="display:none; visibility: hidden">
+                            <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+                          </div>
                         </div>
                       </div>
-
-                      <!-- time (矩形) -->
-                      <div id="u14" class="ax_default box_1 u14" data-label="time">
-                        <div id="u14_div" class="u14_div"></div>
-                        <!-- Unnamed () -->
-                        <div id="u15" class="u15 text" style="display: none; visibility: hidden">
-                          <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
-                        </div>
-                      </div>
-
-                      <!-- Unnamed (水平线) -->
-                      <div id="u16" class="ax_default line u16">
-                        <img id="u16_img" class="img u16_img" src="images/ios秒表计时器/u16.png"/>
-                        <!-- Unnamed () -->
-                        <div id="u17" class="u17 text" style="display: none; visibility: hidden">
-                          <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
-                        </div>
-                      </div>
-                    </script>
-                  </div>
-
-                  <!-- name (矩形) -->
-                  <div id="u18" class="ax_default box_1" data-label="name">
-                    <div id="u18_div" class=""></div>
-                    <!-- Unnamed () -->
-                    <div id="u19" class="text" style="display: none; visibility: hidden">
-                      <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
-                    </div>
-                  </div>
-
-                  <!-- time (矩形) -->
-                  <div id="u20" class="ax_default box_1" data-label="time">
-                    <div id="u20_div" class=""></div>
-                    <!-- Unnamed () -->
-                    <div id="u21" class="text" style="display: none; visibility: hidden">
-                      <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
-                    </div>
-                  </div>
-
-                  <!-- Unnamed (水平线) -->
-                  <div id="u22" class="ax_default line">
-                    <img id="u22_img" class="img " src="images/ios秒表计时器/u16.png"/>
-                    <!-- Unnamed () -->
-                    <div id="u23" class="text" style="display: none; visibility: hidden">
-                      <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
-                    </div>
-                  </div>
-
-                  <!-- Unnamed (水平线) -->
-                  <div id="u24" class="ax_default line">
-                    <img id="u24_img" class="img " src="images/ios秒表计时器/u16.png"/>
-                    <!-- Unnamed () -->
-                    <div id="u25" class="text" style="display: none; visibility: hidden">
-                      <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
                     </div>
                   </div>
                 </div>
@@ -176,37 +157,37 @@
             </div>
 
             <!-- 计次 (椭圆形) -->
-            <div id="u26" class="ax_default box_1" data-label="计次">
-              <img id="u26_img" class="img " src="images/ios秒表计时器/计次_u26.png"/>
+            <div id="u27" class="ax_default box_1 disabled" data-label="计次">
+              <img id="u27_img" class="img " src="images/ios秒表计时器/计次_u27.png"/>
               <!-- Unnamed () -->
-              <div id="u27" class="text" style="visibility: visible;">
+              <div id="u28" class="text">
                 <p><span style="font-family:'应用字体 Regular', '应用字体';">计次</span></p>
               </div>
             </div>
 
             <!-- Unnamed (椭圆形) -->
-            <div id="u28" class="ax_default box_1">
-              <img id="u28_img" class="img " src="images/ios秒表计时器/u28.png"/>
+            <div id="u29" class="ax_default box_1">
+              <img id="u29_img" class="img " src="images/ios秒表计时器/u29.png"/>
               <!-- Unnamed () -->
-              <div id="u29" class="text" style="display: none; visibility: hidden">
+              <div id="u30" class="text" style="display:none; visibility: hidden">
                 <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
               </div>
             </div>
 
             <!-- Unnamed (椭圆形) -->
-            <div id="u30" class="ax_default box_1">
-              <img id="u30_img" class="img " src="images/ios秒表计时器/u28.png"/>
+            <div id="u31" class="ax_default box_1">
+              <img id="u31_img" class="img " src="images/ios秒表计时器/u29.png"/>
               <!-- Unnamed () -->
-              <div id="u31" class="text" style="display: none; visibility: hidden">
+              <div id="u32" class="text" style="display:none; visibility: hidden">
                 <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
               </div>
             </div>
 
             <!-- Unnamed (椭圆形) -->
-            <div id="u32" class="ax_default box_1">
-              <img id="u32_img" class="img " src="images/ios秒表计时器/u28.png"/>
+            <div id="u33" class="ax_default box_1">
+              <img id="u33_img" class="img " src="images/ios秒表计时器/u29.png"/>
               <!-- Unnamed () -->
-              <div id="u33" class="text" style="display: none; visibility: hidden">
+              <div id="u34" class="text" style="display:none; visibility: hidden">
                 <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
               </div>
             </div>
@@ -215,126 +196,130 @@
       </div>
 
       <!-- P (动态面板) -->
-      <div id="u34" class="ax_default" data-label="P">
-        <div id="u34_state0" class="panel_state" data-label="State1">
-          <div id="u34_state0_content" class="panel_state_content">
+      <div id="u35" class="ax_default" data-label="P">
+        <div id="u35_state0" class="panel_state" data-label="State1" style="">
+          <div id="u35_state0_content" class="panel_state_content">
           </div>
         </div>
-        <div id="u34_state1" class="panel_state" data-label="State2">
-          <div id="u34_state1_content" class="panel_state_content">
+        <div id="u35_state1" class="panel_state" data-label="State2" style="visibility: hidden;">
+          <div id="u35_state1_content" class="panel_state_content">
           </div>
         </div>
       </div>
 
-      <!-- Unnamed (矩形) -->
-      <div id="u35" class="ax_default box_1">
-        <div id="u35_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u36" class="text" style="display: none; visibility: hidden">
-          <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
-        </div>
-      </div>
+      <!-- 状态栏 (组合) -->
+      <div id="u36" class="ax_default" data-label="状态栏" data-left="12" data-top="60" data-width="320" data-height="20">
 
-      <!-- Unnamed (组合) -->
-      <div id="u37" class="ax_default">
-
-        <!-- Unnamed (椭圆形) -->
-        <div id="u38" class="ax_default ellipse">
-          <img id="u38_img" class="img " src="images/ios秒表计时器/u38.png"/>
+        <!-- Unnamed (矩形) -->
+        <div id="u37" class="ax_default box_1">
+          <div id="u37_div" class=""></div>
           <!-- Unnamed () -->
-          <div id="u39" class="text" style="display: none; visibility: hidden">
+          <div id="u38" class="text" style="display:none; visibility: hidden">
             <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
           </div>
         </div>
 
-        <!-- Unnamed (椭圆形) -->
-        <div id="u40" class="ax_default ellipse">
-          <img id="u40_img" class="img " src="images/ios秒表计时器/u38.png"/>
+        <!-- Unnamed (组合) -->
+        <div id="u39" class="ax_default" data-left="18" data-top="67" data-width="34" data-height="6">
+
+          <!-- Unnamed (椭圆形) -->
+          <div id="u40" class="ax_default ellipse">
+            <img id="u40_img" class="img " src="images/ios秒表计时器/u40.png"/>
+            <!-- Unnamed () -->
+            <div id="u41" class="text" style="display:none; visibility: hidden">
+              <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆形) -->
+          <div id="u42" class="ax_default ellipse">
+            <img id="u42_img" class="img " src="images/ios秒表计时器/u40.png"/>
+            <!-- Unnamed () -->
+            <div id="u43" class="text" style="display:none; visibility: hidden">
+              <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆形) -->
+          <div id="u44" class="ax_default ellipse">
+            <img id="u44_img" class="img " src="images/ios秒表计时器/u40.png"/>
+            <!-- Unnamed () -->
+            <div id="u45" class="text" style="display:none; visibility: hidden">
+              <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆形) -->
+          <div id="u46" class="ax_default ellipse">
+            <img id="u46_img" class="img " src="images/ios秒表计时器/u40.png"/>
+            <!-- Unnamed () -->
+            <div id="u47" class="text" style="display:none; visibility: hidden">
+              <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆形) -->
+          <div id="u48" class="ax_default ellipse">
+            <img id="u48_img" class="img " src="images/ios秒表计时器/u40.png"/>
+            <!-- Unnamed () -->
+            <div id="u49" class="text" style="display:none; visibility: hidden">
+              <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u50" class="ax_default icon">
+          <img id="u50_img" class="img " src="images/ios秒表计时器/u50.png"/>
           <!-- Unnamed () -->
-          <div id="u41" class="text" style="display: none; visibility: hidden">
+          <div id="u51" class="text" style="display:none; visibility: hidden">
             <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
           </div>
         </div>
 
-        <!-- Unnamed (椭圆形) -->
-        <div id="u42" class="ax_default ellipse">
-          <img id="u42_img" class="img " src="images/ios秒表计时器/u38.png"/>
+        <!-- Unnamed (形状) -->
+        <div id="u52" class="ax_default box_1">
+          <img id="u52_img" class="img " src="images/ios秒表计时器/u52.png"/>
           <!-- Unnamed () -->
-          <div id="u43" class="text" style="display: none; visibility: hidden">
+          <div id="u53" class="text" style="display:none; visibility: hidden">
             <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
           </div>
         </div>
 
-        <!-- Unnamed (椭圆形) -->
-        <div id="u44" class="ax_default ellipse">
-          <img id="u44_img" class="img " src="images/ios秒表计时器/u38.png"/>
+        <!-- Unnamed (形状) -->
+        <div id="u54" class="ax_default label">
+          <img id="u54_img" class="img " src="images/ios秒表计时器/u54.png"/>
           <!-- Unnamed () -->
-          <div id="u45" class="text" style="display: none; visibility: hidden">
-            <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+          <div id="u55" class="text">
+            <p><span style="font-family:'应用字体 Regular', '应用字体';">中国联通</span></p>
           </div>
         </div>
 
-        <!-- Unnamed (椭圆形) -->
-        <div id="u46" class="ax_default ellipse">
-          <img id="u46_img" class="img " src="images/ios秒表计时器/u38.png"/>
+        <!-- Unnamed (形状) -->
+        <div id="u56" class="ax_default label">
+          <img id="u56_img" class="img " src="images/ios秒表计时器/u56.png"/>
           <!-- Unnamed () -->
-          <div id="u47" class="text" style="display: none; visibility: hidden">
-            <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+          <div id="u57" class="text">
+            <p><span style="font-family:'应用字体 Regular', '应用字体';">4G</span></p>
           </div>
         </div>
-      </div>
 
-      <!-- Unnamed (形状) -->
-      <div id="u48" class="ax_default icon">
-        <img id="u48_img" class="img " src="images/ios秒表计时器/u48.png"/>
-        <!-- Unnamed () -->
-        <div id="u49" class="text" style="display: none; visibility: hidden">
-          <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
+        <!-- Unnamed (形状) -->
+        <div id="u58" class="ax_default label">
+          <img id="u58_img" class="img " src="images/ios秒表计时器/u58.png"/>
+          <!-- Unnamed () -->
+          <div id="u59" class="text">
+            <p><span style="font-family:'应用字体 Bold', '应用字体';">08:08</span></p>
+          </div>
         </div>
-      </div>
 
-      <!-- Unnamed (形状) -->
-      <div id="u50" class="ax_default box_1">
-        <img id="u50_img" class="img " src="images/ios秒表计时器/u50.png"/>
-        <!-- Unnamed () -->
-        <div id="u51" class="text" style="display: none; visibility: hidden">
-          <p><span style="font-family:'应用字体 Regular', '应用字体';"></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u52" class="ax_default label">
-        <img id="u52_img" class="img " src="resources/images/transparent.gif"/>
-        <!-- Unnamed () -->
-        <div id="u53" class="text" style="visibility: visible;">
-          <p><span style="font-family:'应用字体 Regular', '应用字体';">中国联通</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u54" class="ax_default label">
-        <img id="u54_img" class="img " src="resources/images/transparent.gif"/>
-        <!-- Unnamed () -->
-        <div id="u55" class="text" style="visibility: visible;">
-          <p><span style="font-family:'应用字体 Regular', '应用字体';">4G</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u56" class="ax_default label">
-        <img id="u56_img" class="img " src="resources/images/transparent.gif"/>
-        <!-- Unnamed () -->
-        <div id="u57" class="text" style="visibility: visible;">
-          <p><span style="font-family:'应用字体 Bold', '应用字体';">08:08</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u58" class="ax_default label">
-        <img id="u58_img" class="img " src="resources/images/transparent.gif"/>
-        <!-- Unnamed () -->
-        <div id="u59" class="text" style="visibility: visible;">
-          <p><span style="font-family:'应用字体 Regular', '应用字体';">93%</span></p>
+        <!-- Unnamed (形状) -->
+        <div id="u60" class="ax_default label">
+          <img id="u60_img" class="img " src="images/ios秒表计时器/u60.png"/>
+          <!-- Unnamed () -->
+          <div id="u61" class="text">
+            <p><span style="font-family:'应用字体 Regular', '应用字体';">93%</span></p>
+          </div>
         </div>
       </div>
     </div>
